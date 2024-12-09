@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SummaryFragment">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.cupcake.model.OrderViewModel" />
+
+        <variable
+            name="summaryFragment"
+            type="com.example.cupcake.SummaryFragment" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/weight_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:textSize="15dp"
+                    android:textColor="@color/grey"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/weight_value"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@{viewModel.weight.toString()}"
+                    tools:text="1kg" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:background="@color/light_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/category_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/grey"
+                    android:textAllCaps="true"
+                    android:text="@string/category" />
+
+                <TextView
+                    android:id="@+id/category_value"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@{viewModel.category}"
+                    tools:text="Plastic" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:background="@color/light_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/pickup_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/grey"
+                    android:textAllCaps="true"
+                    android:text="@string/location" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    tools:text="Selangor" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:background="@color/light_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end">
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/subtotal_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:text="@string/subtotal"
+                            tools:text="Subtotal: " />
+                        <TextView
+                            android:id="@+id/subtotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:text="@{@string/subtotal_point(viewModel.point)}"
+                            tools:text="450 pts" />
+                        </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/bonus_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:text="@string/bonus"
+                            tools:text="Bonus: " />
+
+                        <TextView
+                            android:id="@+id/bonus_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:text="@{@string/bonus_point(viewModel.bonus)}"
+                            tools:text="60 pts" />
+                    </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/total_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:layout_weight="1"
+                                android:text="@string/total"
+                                tools:text="Total: "
+                                android:paddingTop="20dp"/>
+                            <TextView
+                                android:id="@+id/total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="20dp"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:text="@{@string/total_point(viewModel.finalPoint)}"
+                                tools:text="510 pts"
+                                android:paddingTop="20dp"/>
+                    </TableRow>
+                </TableLayout>
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="@{() -> summaryFragment.sendOrder()}"
+                android:text="@string/submit" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="@{() -> summaryFragment.cancelOrder()}"
+                android:text="@string/cancel" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ecolution</string>
+    <string name="plastic">Plastic</string>
+    <string name="paper">Paper</string>
+    <string name="glass">Glass</string>
+    <string name="metal">Metal</string>
+    <string name="organic">Organic</string>
+    <string name="mixed">Mixed</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="submit">Submit Order</string>
+    <string name="total">Total: </string>
+    <string name="total_point">%s pts</string>
+    <string name="subtotal_point">%s pts</string>
+    <string name="subtotal">Subtotal: </string>
+    <string name="bonus">Bonus: </string>
+    <string name="order_details">Quantity: %1$s \n Flavor: %2$s \nPickup date: %3$s \n
+        Total: %4$s \n\n Thank you!</string>
+    <string name="ecolution">Ecolution</string>
+    <string name="better_future_made_from_you_amp_me"><![CDATA[Environment Makes From You & Me]]></string>
+    <string name="point_per_kg">Subtotal %s pts</string>
+    <string name="subtotal_point_label">Subtotal %s pts</string>
+    <string name="bonus_point">%s pts</string>
+    <string name="kg">%s kg</string>
+    <string name="location">Location</string>
+    <string name="location_value">%s, %s</string>
+    <string name="category">Category</string>
+    <string name="weight">Weight</string>
+    <string name="new_recycle_order">New Recycle Order</string>
+
+    <!-- Countries -->
+    <string-array name="countries">
+        <item>Brunei</item>
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+        <item>Singapore</item>
+        <item>Thailand</item>
+    </string-array>
+
+    <!-- States of @Brunei-->
+    <string-array name="states_brunei">
+        <item>Belait</item>
+        <item>Brunei-Muara</item>
+        <item>Temburong</item>
+        <item>Tutong</item>
+    </string-array>
+
+    <!-- States of @Indonesia-->
+    <string-array name="states_indonesia">
+        <item>Aceh</item>
+        <item>Bali</item>
+        <item>Jambi</item>
+        <item>Riau</item>
+        <item>Sumatera Barat</item>
+        <item>Sumatera Utara</item>
+        <item>Sumatera Selantan</item>
+    </string-array>
+
+    <!-- States of @Malaysia-->
+    <string-array name="states_malaysia">
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Malacca</item>
+        <item>Negeri</item>
+        <item>Sembilan</item>
+        <item>Pahang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Sembilan</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+    </string-array>
+
+    <!-- States of @Singapore-->
+    <string-array name="states_singapore">
+        <item>Central</item>
+        <item>North East</item>
+        <item>North West</item>
+        <item>South East</item>
+        <item>South West</item>
+    </string-array>
+
+    <!-- States of @Thailand-->
+    <string-array name="states_thailand">
+        <item>Bangkok</item>
+        <item>Chiang Mai</item>
+        <item>Krabi</item>
+        <item>Pattani</item>
+        <item>Phuket</item>
+    </string-array>
+
+</resources>
